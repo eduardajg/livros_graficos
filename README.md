@@ -1,11 +1,12 @@
+````markdown
 ```python
-# Importa a biblioteca Matplotlib para criar o gráfico
+# IMPORTA A BIBLIOTECA MATPLOTLIB PARA CRIAR O GRÁFICO
 import matplotlib.pyplot as plt
 
 
-# Classe que representa um livro
+# CLASSE QUE REPRESENTA UM LIVRO
 class Livro:
-    # Método construtor da classe
+    # MÉTODO CONSTRUTOR DA CLASSE
     def __init__(self, titulo, autor, genero, quantidade):
         self.titulo = titulo
         self.autor = autor
@@ -13,11 +14,11 @@ class Livro:
         self.quantidade = quantidade
 
 
-# Lista que armazenará todos os livros cadastrados
+# LISTA QUE ARMAZENARÁ TODOS OS LIVROS CADASTRADOS
 livros = []
 
 
-# Função responsável por cadastrar um novo livro
+# FUNÇÃO RESPONSÁVEL POR CADASTRAR UM NOVO LIVRO
 def cadastrar_livro():
     titulo = input("Digite o título do livro: ")
     autor = input("Digite o autor: ")
@@ -30,7 +31,7 @@ def cadastrar_livro():
     print("Livro cadastrado com sucesso!")
 
 
-# Função responsável por listar todos os livros cadastrados
+# FUNÇÃO RESPONSÁVEL POR LISTAR TODOS OS LIVROS CADASTRADOS
 def listar_livros():
     if len(livros) == 0:
         print("Nenhum livro cadastrado.")
@@ -46,7 +47,7 @@ def listar_livros():
         print("--------------------------")
 
 
-# Função responsável por buscar um livro pelo título
+# FUNÇÃO RESPONSÁVEL POR BUSCAR UM LIVRO PELO TÍTULO
 def buscar_livro():
     titulo_busca = input("Digite o título do livro que deseja buscar: ")
 
@@ -63,11 +64,12 @@ def buscar_livro():
             encontrado = True
             break
 
+    # CASO NENHUM LIVRO SEJA ENCONTRADO
     if not encontrado:
         print("Livro não encontrado.")
 
 
-# Função responsável por gerar o gráfico
+# FUNÇÃO RESPONSÁVEL POR GERAR O GRÁFICO
 def gerar_grafico():
     generos = {}
 
@@ -90,7 +92,7 @@ def gerar_grafico():
     plt.show()
 
 
-# Menu principal do sistema
+# MENU PRINCIPAL DO SISTEMA
 while True:
     print("===== BIBLIOTECA =====")
     print("1 - Cadastrar livro")
@@ -103,20 +105,4 @@ while True:
 
     if opcao == "1":
         cadastrar_livro()
-
-    elif opcao == "2":
-        listar_livros()
-
-    elif opcao == "3":
-        buscar_livro()
-
-    elif opcao == "4":
-        gerar_grafico()
-
-    elif opcao == "5":
-        print("Sistema encerrado.")
-        break
-
-    else:
-        print("Opção inválida.")
-```
+````
