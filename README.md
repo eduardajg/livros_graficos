@@ -1,4 +1,3 @@
-````markdown
 ```python
 # IMPORTA A BIBLIOTECA MATPLOTLIB PARA CRIAR O GRÁFICO
 import matplotlib.pyplot as plt
@@ -105,4 +104,21 @@ while True:
 
     if opcao == "1":
         cadastrar_livro()
-````
+
+    elif opcao == "2":
+        listar_livros()
+
+    elif opcao == "3":
+        buscar_livro()
+
+    elif opcao == "4":
+        gerar_grafico()
+
+    elif opcao == "5":
+        print("Sistema encerrado.")
+        break
+
+    # CASO O USUÁRIO DIGITE UMA OPÇÃO INEXISTENTE
+    else:
+        print("Opção inválida.")
+```
