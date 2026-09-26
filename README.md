@@ -11,6 +11,7 @@ class Livro:
         self.genero = genero
         self.quantidade = quantidade
 
+
 # Lista que armazenará todos os livros cadastrados
 livros = []
 
