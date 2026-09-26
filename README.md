@@ -1,9 +1,10 @@
-```python
 # IMPORTA A BIBLIOTECA MATPLOTLIB PARA CRIAR O GRÁFICO
+```python
 import matplotlib.pyplot as plt
-
+```
 
 # CLASSE QUE REPRESENTA UM LIVRO
+```python
 class Livro:
     # MÉTODO CONSTRUTOR DA CLASSE
     def __init__(self, titulo, autor, genero, quantidade):
@@ -11,13 +12,15 @@ class Livro:
         self.autor = autor
         self.genero = genero
         self.quantidade = quantidade
-
+```
 
 # LISTA QUE ARMAZENARÁ TODOS OS LIVROS CADASTRADOS
+```python
 livros = []
-
+```
 
 # FUNÇÃO RESPONSÁVEL POR CADASTRAR UM NOVO LIVRO
+```python
 def cadastrar_livro():
     titulo = input("Digite o título do livro: ")
     autor = input("Digite o autor: ")
@@ -28,9 +31,10 @@ def cadastrar_livro():
     livros.append(livro)
 
     print("Livro cadastrado com sucesso!")
-
+```
 
 # FUNÇÃO RESPONSÁVEL POR LISTAR TODOS OS LIVROS CADASTRADOS
+```python
 def listar_livros():
     if len(livros) == 0:
         print("Nenhum livro cadastrado.")
@@ -44,9 +48,10 @@ def listar_livros():
         print(f"Gênero: {livro.genero}")
         print(f"Quantidade disponível: {livro.quantidade}")
         print("--------------------------")
-
+```
 
 # FUNÇÃO RESPONSÁVEL POR BUSCAR UM LIVRO PELO TÍTULO
+```python
 def buscar_livro():
     titulo_busca = input("Digite o título do livro que deseja buscar: ")
 
@@ -62,13 +67,15 @@ def buscar_livro():
 
             encontrado = True
             break
-
-    # CASO NENHUM LIVRO SEJA ENCONTRADO
+```
+# CASO NENHUM LIVRO SEJA ENCONTRADO
+   ```python
     if not encontrado:
         print("Livro não encontrado.")
-
+```
 
 # FUNÇÃO RESPONSÁVEL POR GERAR O GRÁFICO
+```python
 def gerar_grafico():
     generos = {}
 
@@ -89,9 +96,10 @@ def gerar_grafico():
     plt.ylabel("Quantidade de livros")
 
     plt.show()
-
+```
 
 # MENU PRINCIPAL DO SISTEMA
+```python
 while True:
     print("===== BIBLIOTECA =====")
     print("1 - Cadastrar livro")
